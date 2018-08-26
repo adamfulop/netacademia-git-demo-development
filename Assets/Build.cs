@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEditor;
 
 public class Build {
@@ -5,3 +6,4 @@ public class Build {
         BuildPipeline.BuildPlayer(new[] {"SampleScene"}, "Build/GitDemo.apk", BuildTarget.Android, BuildOptions.Development);
     }
 }
+#endif
